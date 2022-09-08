@@ -25,8 +25,6 @@ const renderInputField = (
   return (
     <View key={placeHolder}>
       <Input
-        // label={'name'}
-        //editable={false}
         keyboardType={keyboardType}
         labelStyle={styles.inputLabelStyle}
         placeholderTextColor={'#777'}

@@ -134,8 +134,6 @@ const AddStudentScreen = ({navigation}) => {
         console.error(e);
       }
       const getvalue = await AsyncStorage.getAllKeys();
-
-      console.log(getvalue);
     };
 
     if (
@@ -270,7 +268,6 @@ const AddStudentScreen = ({navigation}) => {
         _validateQualification &&
         _validateInstituteName
       ) {
-        console.log(edObj);
         edDetails(edObj);
         setShowModel(false);
       }
@@ -456,7 +453,6 @@ const AddStudentScreen = ({navigation}) => {
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => {
-              console.log(educationDetails);
               saveButton();
             }}
             style={styles.loginButton}>
